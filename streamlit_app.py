@@ -102,4 +102,4 @@ if st.button("🪄 Generate Hashtags", type="primary"):
         st.error("Please enter some text to generate hashtags!")
 
 st.markdown("---")
-st.markdown("Built with ❤️ using Streamlit")
+st.markdown("Built with ❤️ by Tanvi")
