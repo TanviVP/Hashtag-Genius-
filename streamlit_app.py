@@ -38,27 +38,40 @@ st.set_page_config(page_title="HashTag Genius", page_icon="#️⃣")
 
 st.markdown("""
 <style>
+.stApp {
+    background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 .main-header {
     text-align: center;
-    color: #667eea;
+    color: white;
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 .subtitle {
     text-align: center;
-    color: #666;
+    color: rgba(255,255,255,0.9);
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 .hashtag {
     display: inline-block;
-    background: linear-gradient(45deg, #667eea, #764ba2);
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
     color: white;
-    padding: 8px 16px;
-    margin: 4px;
-    border-radius: 20px;
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 25px;
     font-weight: bold;
+    border: 1px solid rgba(255,255,255,0.3);
 }
 </style>
 """, unsafe_allow_html=True)
